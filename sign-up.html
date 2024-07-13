@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css" />
+    <script src="sign-up.js"></script>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form id="signup-form" action="register.jsp" method="post">
+        <input type="text" id="regNo" name="regNo" placeholder="Registration No." required />
+        <input
+          type="email"
+          id="emailId"
+          name="emailId"
+          placeholder="Email"
+          required
+        />
+        <input 
+         type="text"  
+         id="linkedIn"
+         name="linkedIn"
+         placeholder="LinkedIn Id"
+         required
+        /> 
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create Password"
+          required
+        />
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="login">
+        <a class="signup-link" href="login.html">Login</a>
+      </div>
+    </div>
+  </body>
+</html>

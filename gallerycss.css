@@ -1,0 +1,116 @@
+@import url(https://db.onlinewebfonts.com/c/10d0b50da141372ab1f5ae8af6193f9e?family=Glosa+W01+Black);
+body{
+    margin: 0px;
+    background-image: url(https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:inherit;
+  }
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+/* Style the logo */
+.logo img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Style the navigation links */
+.links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li {
+    margin-right: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ddd;
+}
+
+/* Style the user icon and input */
+.text input[type="text"] {
+    text-align: end;
+    border: none;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.text span {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+
+/* Clear floats after the navigation bar */
+.navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.h{
+      color:hsl(210, 18%, 96%);
+      text-align:center;
+      font-family:'Lucida Sans';
+      font-style: oblique;
+      margin-bottom: 10px;    
+    }
+  
+    .wrapper {
+      position: relative;
+      margin:auto;
+      margin-top: 100px;
+      max-width: 1000px;
+      max-height: 1000px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 2%;
+      justify-items: center;
+      align-items: center;
+    }
+    
+    .wrapper img {
+      grid-column: span 2;
+      max-width: 100%;
+      margin-bottom: 1%;
+      transform: scale(1);
+      transition: all .25s;
+      
+      &:nth-child(7n + 1) {
+        grid-column: 2 / span 2;
+      }
+      
+      &:hover {
+        z-index: 2;
+        transform: scale(2);
+      }
+    }
+    .foot{
+        padding:10px;
+        background-color: black;
+    }

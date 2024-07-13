@@ -1,0 +1,99 @@
+*{
+  font-family: kanit;
+}
+body {
+  font-family: Roboto;
+  background: url(./images/rut-miit-YIdkWynJdSk-unsplash1.jpg) no-repeat;
+  background-size: cover;
+  /* backdrop-filter: blur(0px); */
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  /* background-color: rgba(230, 230, 230, 0.5); */
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding:20px;
+  width: 300px;
+  height: 430px;
+  text-align: center;
+  border: 1px solid rgb(162, 162, 162);
+}
+
+h2 {
+  margin-top: -5px;
+  font-family: Kanit regular;
+  font-size: 35px;
+  color: rgb(52, 8, 8);
+  margin-bottom: 20px;
+}
+
+input {
+  background:none;
+  width: 75%;
+  padding: 1px 0;
+  margin: 20px 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(52, 8, 8);
+  /* border-radius: 10px; */
+}
+
+::placeholder {
+  margin-left: px;
+  color: rgb(52, 8, 8);
+}
+p{
+  color: rgb(52, 8, 8);
+  font-size: 14px;
+  margin-left: -147px;
+  margin-top: -5px;
+}
+p:hover{
+  text-decoration: underline;
+  color: rgb(0, 85, 255);
+}
+button {
+  margin-top: 4px;
+  width: 50%;
+  background-color: rgb(52, 8, 8);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: kanit;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 0.025rem solid rgb(70, 12, 12);
+}
+
+button:hover {
+  background:none;
+  color: rgb(70, 12, 12);
+}
+
+.signup-link {
+  margin-top: 20px;
+  color: #E0E1E4;
+  text-decoration: none;
+}
+
+.login{
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: bold;
+  margin-top: 20px;
+  color: rgb(70, 12, 12);
+}
+.login:hover{
+  text-decoration:underline;
+  color:  #E0E1E4;
+}

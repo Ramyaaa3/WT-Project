@@ -1,0 +1,269 @@
+<html>
+<head>
+    <title>Alumni Directory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+    <style>
+    .navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+/* Style the logo */
+.logo img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Style the navigation links */
+.links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li {
+    margin-right: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ddd;
+}
+
+/* Style the user icon and input */
+.text input[type="text"] {
+    text-align: end;
+    border: none;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.text span {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+
+/* Clear floats after the navigation bar */
+.navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            }
+
+        header {
+            background-color: slategray;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #alumni-directory {
+            display: flex;
+            align-items: center;
+        }
+
+        #search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        #search-input {
+            margin-right: 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            padding: 20px;
+        }
+
+        .alumni-profile {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            max-width: 500px;
+            flex: 0 1 calc(33.33% - 20px);
+            display: flex; 
+            align-items: center;
+        }
+
+        .styled-submit {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px; 
+            cursor: pointer;
+            font-size: 16px;
+            width: 200px; 
+            height: 40px; 
+            transition: background-color 0.3s ease; 
+        }
+        .alumni-photo img{
+            border-radius: 10%;
+        }
+       .alumni-photo {
+            flex: 0 0 100px; 
+            margin-right: 20px;
+        }
+        #search-input {
+            font-size: 18px; 
+            padding: 10px;
+            width: 300px; 
+        }
+body{
+  background-image: url('C:\Users\manis\Downloads\alumni.jpeg');
+}
+.foot{
+    padding:10px;
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a><img src="./images/hglogo1.png"></a>
+        </div>
+        <div class="links">
+            <nav>
+                <ul>
+                <li><a href="myhomepage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="newsroom.html">News Room</a></li>
+                <li><a href="testimonals.html">Testimonals</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="aldirectory.html">Alumni Directory/Connect</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text">
+            <a><input type="text" value="My Profile" disabled><span class="material-icons-outlined">
+                account_circle
+                </span></a>
+        </div>
+    </div>
+    <header>
+        <h1>Alumni Directory</h1>
+        <div id="search-form">
+            <input type="text" id="search-input" placeholder="Search by name...">
+            <button type="submit" class="styled-submit">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="alumni-profile">
+            <div class="alumni-photo">
+                <img src="./images/johndoe.jpeg" alt="Alumni Photo" style="width: 200px; height: 150px;">
+            </div>
+            <div class="alumni-details">
+                <h3>John Doe</h3>
+                <p>Reg No: ABC121</p>
+                <p>Branch: Computer Science</p>
+                <p>Passed Out: 20XX</p>
+                <a href="https://www.linkedin.com/in/jhon-doe-09a88b8a/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+        <div class="alumni-profile">
+            <div class="alumni-photo">
+                <img src="./images/harryjames.jpeg" alt="Alumni Photo" style="width: 200px; height: 150px;">
+            </div>
+            <div class="alumni-details">
+                <h3>Harry James</h3>
+                <p>Reg No: ABC122</p>
+                <p>Branch: Computer Science</p>
+                <p>Passed Out: 20XX</p>
+                <a href="https://www.linkedin.com/in/harry-james-b6133b19/" target="_blank">LinkedIn Profile</a>
+                 
+            </div>
+        </div>
+        <div class="alumni-profile">
+            <div class="alumni-photo">
+                <img src="./images/tomemmet.jpeg" alt="Alumni Photo" style="width: 200px; height: 150px;">
+            </div>
+            <div class="alumni-details">
+                <h3>Tom Emmett</h3>
+                <p>Reg No: ABC123</p>
+                <p>Branch: Computer Science</p>
+                <p>Passed Out: 20XX</p>
+                <a href="https://www.linkedin.com/in/tom-emmett-b929b7189/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+        <div class="alumni-profile">
+            <div class="alumni-photo">
+                <img src="./images/williamjenner.jpeg" alt="Alumni Photo" style="width: 200px; height: 150px;">
+            </div>
+            <div class="alumni-details">
+                <h3>Williams Jenner</h3>
+                <p>Reg No: ABC124</p>
+                <p>Branch: Computer Science</p>
+                <p>Passed Out: 20XX</p>
+                <a href="https://www.linkedin.com/in/williams-jenner-458a1b214/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+        <div class="alumni-profile">
+            <div class="alumni-photo">
+                <img src="./images/marypowell.jpeg" alt="Alumni Photo" style="width: 200px; height: 150px;">
+            </div>
+            <div class="alumni-details">
+                <h3>Mary Powell</h3>
+                <p>Reg No: ABC125</p>
+                <p>Branch: Computer Science</p>
+                <p>Passed Out: 20XX</p>
+                <a href="https://www.linkedin.com/in/mary-g-powell/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+       <div class="alumni-profile">
+            <div class="alumni-photo">
+                <img src="./images/stella.jpeg" alt="Alumni Photo" style="width: 200px; height: 150px;">
+            </div>
+            <div class="alumni-details">
+                <h3>Stella</h3>
+                <p>Reg No: ABC126</p>
+                <p>Branch: Computer Science</p>
+                <p>Passed Out: 20XX</p>
+                <a href="https://www.linkedin.com/in/stella-%F0%9F%98%8A-25324017b/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </main>
+    <div class="foot">
+        <h1 style="text-align:center; font-size:40px;color:gray;">Hogwart's Alumni Association</h1>
+        <h2 style="text-align:center; font-size:20px;color:whitesmoke;">With You in your Curriculum,</h2>
+        <h2 style="text-align:center; font-size:20px;color:whitesmoke;">And With You Beyond your curriculum</h2>
+        <h3 style="text-align:center; font-size: 18px;color:gray;">Stay in Touch</h3>
+    <span>
+        <span><p style="text-align:left; font-size:15px;color:gray;">Designed & Maintained by Batch-13 Sec III-C &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a style="text-align:right; font-size:15px;color:gray;">&copy All Rights Reserved</a></p></span>
+    </span>
+</div>
+</body>
+</html>
